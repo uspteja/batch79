@@ -1,0 +1,52 @@
+git init
+git config --global user.name "phani teja"
+git config --global user.email "uspteja.nag@gmail.com"
+
+git config --list
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+git config --list
+
+================
+
+touch file1
+ls
+git status
+git add file1
+git status
+git commit -m "label" file1
+git status
+git log
+git show commitid
+
+touch file2 file3 file4 file5
+ls
+git status
+git add file2 file3 file4 file5
+or 
+git add .
+or
+git add *
+or 
+git add -A
+git status
+git commit -m "label" file-name
+git commit -m "label"
+
+=================
+
+rm -rf file-name
+
+git add file1  (workspace to staging)
+git reset head file1 (staging to workspace)
+
+git commit -m "label"  (staging to local repo)
+git reset --soft commit-id(n-1)  (local repo to staging)
+
+git commit -m "label" modified-file-name (workspace to local)
+git reset --mixed commit-id(n-1)  (local repo to workspace)
+
+git reset --hard commit-id  (to delete commit and data)
+
