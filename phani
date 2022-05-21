@@ -50,3 +50,12 @@ git reset --mixed commit-id(n-1)  (local repo to workspace)
 
 git reset --hard commit-id  (to delete commit and data)
 
+git clone https://github.com/uspteja/batch79/blob/main/phani
+ls
+cd batch79
+ls
+touch add file1
+git status
+git commit -m "file1"
+git log
+git push
